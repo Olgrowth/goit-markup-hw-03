@@ -1,0 +1,260 @@
+:root {
+    --main-title-color: #FFFFFF;
+    --accent-color: #2E2F42;
+    --adress-color: #434455;
+    --description-color: #434455;
+    --background-color: #2E2F42;
+    --background-team-color: #F4F4FD;
+    --background-button-color: #4D5AE5;
+    --secondary-button-color: #E7E9FC;
+    --logo-color: #4D5AE5;
+    --color-button: #FFFFFF;
+    --link-color: #2E2F42;
+    --hover-color: #4D5AE5;
+    --footer-description-color: #E7E9FC;
+    --footer-logo-color: #F4F4FD;
+    --secondary-font: 'Raleway', sans-serif;
+
+
+
+
+
+
+
+}
+
+
+body{
+    font-family: 'roboto', sans-serif;
+    
+}
+
+.list{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+.title{
+font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 36px;    
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+.subtitle{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.description{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+.logo{
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer; 
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+ color: var(--adress-color);
+}
+
+/* ----header----- */
+.header {
+}
+.header-navigation {
+}
+
+.header-logo {
+   
+    color: var(--accent-color);
+}
+.header-small-logo{
+color: var(--logo-color);
+}
+.header-list {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);  
+}
+
+.header-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.header-link{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--link-color);
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--hover-color); 
+}
+
+.header-adress {
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--description-color);
+}
+
+.header-mailto{  
+}
+.header-tel {
+}
+.header-mailto:hover,
+.header-mailto:focus{
+color: var(--hover-color);
+}
+
+.header-tel:hover,
+.header-tel:focus{
+color: var(--hover-color);
+}
+
+/* ---------------hero------------ */
+.hero {
+    background-color: var(--background-color);
+}
+.hero-title {
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+color: var(--main-title-color);
+}
+
+.hero-btn {
+ font-family: inherit;
+ color: var(--color-button);
+ background-color: var(--background-button-color);
+}
+
+.btn:hover .btn:focus{
+    color: var(--hover-color);
+    }
+
+/* -------------------feature--------------- */
+.feature {
+}
+.feature-list {
+}
+.feature-item {
+}
+.feature-subtitle {
+color: var(--accent-color);
+}
+
+.feature-description {
+
+color: var(--description-color);
+}
+/* --------------benefits------------ */
+.benefits {
+}
+
+.benefits-title {
+color: var(--accent-color);
+}
+
+.benefits-list {
+}
+.benefits-item {
+}
+ /* ------------team--------------- */
+.team {
+    background-color: var(--background-team-color);
+}
+.team-title {
+
+color: var(--accent-color);
+}
+.team-list {
+}
+
+.team-item {
+}
+.team-subtitle {
+    color: var(--accent-color);
+}
+.team-description {
+ color: var(--description-color);   
+}
+
+.footer {
+    background-color: var(--background-color);
+}
+.footer-logo {
+    
+    color: var(--footer-logo-color);
+}
+.footer-small-logo {
+    color: var(--logo-color);
+}
+.footer-description{
+    color: var(--footer-description-color);
+}
+
+
+/* ------project cards-------- */
+.projects-list {
+}
+.projects-item {
+}
+.projects-btn {
+    color: var(--background-button-color);
+    background-color: var(--secondary-button-color);
+}
+
+.projects-list .projects-btn:hover,
+.projects-list .projects-btn:focus {
+    color: var(--secondary-button-color);
+    background-color: var(--background-button-color);
+    }
+ 
+/* ---------portfolio---------- */
+.portfolio-list {
+}
+
+.portfolio-item {
+}
+.porfolio-subtitle {
+    color: var(--accent-color);
+}
+.portfolio-description {
+ color: var(--description-color);  
+}
