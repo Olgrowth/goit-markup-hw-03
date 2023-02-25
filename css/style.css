@@ -4,9 +4,10 @@
     --adress-color: #434455;
     --description-color: #434455;
     --background-color: #2E2F42;
+    --background-secondary-color: #FFFFFF; 
     --background-team-color: #F4F4FD;
     --background-button-color: #4D5AE5;
-    --secondary-button-color: #E7E9FC;
+    --secondary-button-color: #E7E9FC;  
     --logo-color: #4D5AE5;
     --color-button: #FFFFFF;
     --link-color: #2E2F42;
@@ -14,42 +15,62 @@
     --footer-description-color: #E7E9FC;
     --footer-logo-color: #F4F4FD;
     --secondary-font: 'Raleway', sans-serif;
-
-
-
-
-
-
-
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: 'roboto', sans-serif;
-    
-}
+    }
+
+    .container {
+        outline: 1px solid red;
+        width: 1158px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+   
 
 .list{
     list-style: none;
-}
-
+    
+    }
 
 a{
-    text-decoration: none;
-}
+  text-decoration: none;
+    }
+
 .title{
 font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 36px;    
 line-height: 1.1;
 letter-spacing: 0.02em;
-}
+    }
+
 .subtitle{
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
-}
+    }
 .description{
 font-size: 16px;
 line-height: 1.5;
@@ -91,13 +112,17 @@ letter-spacing: 0.02em;
 
 /* ----header----- */
 .header {
+   background-color: var(--background-secondary-color);
+    
 }
 .header-navigation {
+    display: flex;
+     
 }
 
 .header-logo {
-   
-    color: var(--accent-color);
+   color: var(--accent-color);
+   margin-right: 76px;
 }
 .header-small-logo{
 color: var(--logo-color);
@@ -106,14 +131,20 @@ color: var(--logo-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--accent-color);  
-}
+  color: var(--accent-color);
+  display: flex;
+  
+  }
 
 .header-item {
     background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    margin-right: 40px;
 }
+
+.header-item:last-child {
+  margin-right: 0;
+  }
 .header-link{
 font-size: 16px;
 line-height: 1.5;
@@ -131,9 +162,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--description-color);
+display: flex;
+
+
 }
 
-.header-mailto{  
+.header-mailto{ 
+    margin-right: 40px; 
 }
 .header-tel {
 }
@@ -150,30 +185,63 @@ color: var(--hover-color);
 /* ---------------hero------------ */
 .hero {
     background-color: var(--background-color);
+    outline: 1px solid red;
+    height: 600px;
+    
 }
+
+.hero-container {
+width: 496px;
+height: 120px;
+display: flex;
+justify-content: center;
+}
+
 .hero-title {
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
+padding-top: 188px;
 }
+
+
 
 .hero-btn {
  font-family: inherit;
  color: var(--color-button);
- background-color: var(--background-button-color);
+background-color: var(--background-button-color);
+border-radius: 4px;
+padding: 16px 32px;
+box-shadow: rgba(0, 0, 0, 0.15);
+
+
 }
 
 .btn:hover .btn:focus{
     color: var(--hover-color);
     }
 
+.hero-btn-container {
+    /* display: flex;
+    justify-content: center; */
+}
+
 /* -------------------feature--------------- */
 .feature {
+    /* outline: 1px solid red;
+    width: 1128px;
+    margin-top: 120px; */
+    
 }
+
+
 .feature-list {
+    display: flex;
 }
+
 .feature-item {
+    
 }
 .feature-subtitle {
 color: var(--accent-color);
