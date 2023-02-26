@@ -230,7 +230,6 @@ margin-bottom: 48px;
 background-color: var(--background-button-color);
 border-radius: 4px;
 padding: 16px 32px;
-box-shadow: rgba(0, 0, 0, 0.15);
 display: block;
 margin: 0 auto;
 text-align: center;
@@ -263,8 +262,9 @@ text-align: center;
 
 .feature-item {
     flex-wrap: wrap;
-    width: calc((100%-72px)/3);
+    flex-basis: calc((100%-72px)/3);
 }
+
 .feature-subtitle {
 color: var(--accent-color);
 }
@@ -412,10 +412,12 @@ margin-bottom: 72px;
 .porfolio-subtitle {
     color: var(--accent-color);
     margin-top: 32px;
+    margin-left: 16px;
 }
 
 .portfolio-description {
  color: var(--description-color);
  margin-top: 8px;
- margin-bottom: 32px;  
+ margin-bottom: 32px;
+ margin-left: 16px; 
 }
