@@ -15,6 +15,7 @@
     --footer-description-color: #E7E9FC;
     --footer-logo-color: #F4F4FD;
     --secondary-font: 'Raleway', sans-serif;
+    --padding-top: 120px;
 }
 
 h1,
@@ -37,12 +38,9 @@ body{
     }
 
     .container {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         width: 1158px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -110,14 +108,26 @@ letter-spacing: 0.02em;
  color: var(--adress-color);
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* ----header----- */
 .header {
-   background-color: var(--background-secondary-color);
-    
-}
+    background-color: var(--background-secondary-color);
+   }
+
+   .header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
 .header-navigation {
     display: flex;
-     
+    padding-top: 24px;
+    padding-bottom: 24px; 
 }
 
 .header-logo {
@@ -137,13 +147,13 @@ color: var(--logo-color);
   }
 
 .header-item {
-    background: #FFFFFF;
+    background: var(--background-secondary-color);
     display: flex;
     margin-right: 40px;
 }
 
 .header-item:last-child {
-  margin-right: 0;
+  margin-right: 332px;
   }
 .header-link{
 font-size: 16px;
@@ -185,8 +195,10 @@ color: var(--hover-color);
 /* ---------------hero------------ */
 .hero {
     background-color: var(--background-color);
-    outline: 1px solid red;
     height: 600px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -197,12 +209,17 @@ display: flex;
 justify-content: center;
 }
 
-.hero-title {
+.hero-title {   
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
+width: 496px;
 padding-top: 188px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 48px;
+
 }
 
 
@@ -214,7 +231,9 @@ background-color: var(--background-button-color);
 border-radius: 4px;
 padding: 16px 32px;
 box-shadow: rgba(0, 0, 0, 0.15);
-
+display: block;
+margin: 0 auto;
+text-align: center;
 
 }
 
@@ -238,10 +257,13 @@ box-shadow: rgba(0, 0, 0, 0.15);
 
 .feature-list {
     display: flex;
+    padding-top: var(--padding-top);
+    gap: 24px;
 }
 
 .feature-item {
-    
+    flex-wrap: wrap;
+    width: calc((100%-72px)/3);
 }
 .feature-subtitle {
 color: var(--accent-color);
@@ -253,56 +275,110 @@ color: var(--description-color);
 }
 /* --------------benefits------------ */
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px; 
 }
 
 .benefits-title {
 color: var(--accent-color);
+text-align: center;
+
+
 }
 
 .benefits-list {
+     display: flex;
+     padding-top: var(--padding-top);
+     gap: 24px;
 }
 .benefits-item {
+     flex-wrap: wrap;
+    width: calc((100%-48px)/3);
 }
  /* ------------team--------------- */
 .team {
     background-color: var(--background-team-color);
 }
 .team-title {
-
+text-align: center;
 color: var(--accent-color);
+padding-top: 120px;
+margin-bottom: 72px;
 }
 .team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-item {
+    background: var(--background-secondary-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    flex-wrap: wrap;
+    width: calc((100%-72px)/3);
 }
 .team-subtitle {
     color: var(--accent-color);
+    margin-bottom: 8px;
+    margin-top: 32px;
+    text-align: center;
 }
 .team-description {
- color: var(--description-color);   
+    color: var(--description-color); 
+    text-align: center;
+    padding-bottom: 32px;
 }
 
+
 .footer {
+    height: 310px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--background-color);
+    display: flex;
+    align-items: center;
 }
+
+
 .footer-logo {
-    
     color: var(--footer-logo-color);
+      
+
+    
 }
+
 .footer-small-logo {
     color: var(--logo-color);
+    
 }
+
 .footer-description{
     color: var(--footer-description-color);
+    margin-top: 16px;
+    width: 264px;
+    display: flex;
+    align-items: center;
 }
 
 
 /* ------project cards-------- */
 .projects-list {
+        display: flex;
+        justify-content: center;
 }
+
 .projects-item {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    padding-right: 24px;
 }
+
+.projects-item:last-child{
+     padding-right: 0;
+}
+
 .projects-btn {
     color: var(--background-button-color);
     background-color: var(--secondary-button-color);
@@ -316,13 +392,30 @@ color: var(--accent-color);
  
 /* ---------portfolio---------- */
 .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-item {
+    width: calc((100%-48px)/3);
+     
+    background: var(--background-secondary-color);
+    width: 360px;
+    height: 420px;
+    box-sizing: border-box;
+    border: 1px solid #E7E9FC;
 }
+  
 .porfolio-subtitle {
     color: var(--accent-color);
+    margin-top: 32px;
 }
+
 .portfolio-description {
- color: var(--description-color);  
+ color: var(--description-color);
+ margin-top: 8px;
+ margin-bottom: 32px;  
 }
