@@ -68,7 +68,7 @@ letter-spacing: 0.02em;
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
-    }
+}
 .description{
 font-size: 16px;
 line-height: 1.5;
@@ -116,13 +116,13 @@ img{
 /* ----header----- */
 .header {
     background-color: var(--background-secondary-color);
-   }
+}
 
    .header-container{
         display: flex;
         justify-content: center;
         align-items: center;
-   }
+}
 
 .header-navigation {
     display: flex;
@@ -154,7 +154,7 @@ color: var(--logo-color);
 
 .header-item:last-child {
   margin-right: 332px;
-  }
+}
 .header-link{
 font-size: 16px;
 line-height: 1.5;
@@ -319,7 +319,7 @@ margin-bottom: 72px;
     border-radius: 0px 0px 4px 4px;
     flex-wrap: wrap;
      width: calc ((100%-3*24px)/4);
-   }
+}
 
 .team-subtitle {
     color: var(--accent-color);
