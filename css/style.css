@@ -262,7 +262,7 @@ text-align: center;
 }
 
 .feature-item {
-    flex-basis: calc((1128px-72px)/3);
+    flex-basis: calc(100%-72px)/3;
     flex-wrap: wrap;
 }
 
