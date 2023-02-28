@@ -92,7 +92,7 @@ letter-spacing: 0.02em;
 }
 
 .section {
-    padding-top: var(--padding-top);
+    padding: var(--padding-top) 0;
 }
 
 .section-title {
