@@ -39,7 +39,7 @@ body{
 
     .container {
         /* outline: 1px solid red; */
-        width: 1158px;
+        max-width: 1158px;
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
@@ -91,6 +91,22 @@ letter-spacing: 0.02em;
     cursor: pointer; 
 }
 
+.section {
+    padding-top: var(--padding-top);
+}
+
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 40 px;
+text-align: center;
+letter-spacing: 0.02em;
+}
+
+.portfolio-card {
+    padding: 32px 16px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -113,6 +129,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
+
 /* ----header----- */
 .header {
     background-color: var(--background-secondary-color);
@@ -120,7 +139,6 @@ img{
 
    .header-container{
         display: flex;
-        justify-content: center;
         align-items: center;
 }
 
@@ -131,7 +149,9 @@ img{
 }
 
 .header-logo {
+
    color: var(--accent-color);
+
    margin-right: 76px;
 }
 .header-small-logo{
@@ -143,13 +163,13 @@ color: var(--logo-color);
   letter-spacing: 0.02em;
   color: var(--accent-color);
   display: flex;
-  
+  gap: 40px;
   }
 
 .header-item {
     background: var(--background-secondary-color);
     display: flex;
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .header-item:last-child {
@@ -159,32 +179,40 @@ color: var(--logo-color);
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+
 color: var(--link-color);
+
 }
 .header-link:hover,
 .header-link:focus {
+
     color: var(--hover-color); 
 }
 
 .header-adress {
+
 font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--description-color);
 display: flex;
-
+gap: 40px;
 
 }
 
 .header-mailto{ 
-    margin-right: 40px; 
+    gap: 40px; 
 }
+
 .header-tel {
+
 }
 .header-mailto:hover,
 .header-mailto:focus{
+
 color: var(--hover-color);
+
 }
 
 .header-tel:hover,
@@ -195,18 +223,11 @@ color: var(--hover-color);
 /* ---------------hero------------ */
 .hero {
     background-color: var(--background-color);
-    height: 600px;
-    width: 1440px;
+    /* height: 600px; */
+    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
-    
-}
-
-.hero-container {
-width: 496px;
-height: 120px;
-display: flex;
-justify-content: center;
+    padding: 180px 0;
 }
 
 .hero-title {   
@@ -215,14 +236,11 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
 width: 496px;
-padding-top: 188px;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 48px;
 
 }
-
-
 
 .hero-btn {
  font-family: inherit;
@@ -234,91 +252,87 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 display: block;
 margin: 0 auto;
 text-align: center;
-
+border: none;
 }
 
 .btn:hover .btn:focus{
     color: var(--hover-color);
     }
 
-.hero-btn-container {
-    /* display: flex;
-    justify-content: center; */
-}
 
 /* -------------------feature--------------- */
 .feature {
-    /* outline: 1px solid red;
-    width: 1128px;
-    margin-top: 120px; */
+    padding-bottom: 0;
     
 }
 
-
 .feature-list {
     display: flex;
-    padding-top: var(--padding-top);
     gap: 24px;
-}
-
-.feature-item {
-    width: calc ((100%-48px)/3);
     flex-wrap: wrap;
 }
 
+.feature-item {
+    flex-basis: calc((100% - 72px) / 4);
+    
+}
+
 .feature-subtitle {
-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--accent-color);
+    margin-bottom: 8px;
 }
 
 .feature-description {
-
 color: var(--description-color);
 }
+
 /* --------------benefits------------ */
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 120px; 
+  /* padding-bottom: 120px;  */
 }
 
 .benefits-title {
 color: var(--accent-color);
 text-align: center;
+margin-bottom: 72px;
 
 
 }
 
 .benefits-list {
      display: flex;
-     padding-top: var(--padding-top);
+     flex-wrap: wrap;
      gap: 24px;
 }
 .benefits-item {
-     flex-wrap: wrap;
-    width: calc ((100%-48px)/3);
+     
+    flex-basis: calc((100% - 48px) / 3);
 }
  /* ------------team--------------- */
 .team {
     background-color: var(--background-team-color);
 }
 .team-title {
-text-align: center;
+
 color: var(--accent-color);
-padding-top: 120px;
+
 margin-bottom: 72px;
 }
 .team-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
-    
+    flex-wrap: wrap;
 }
 
 .team-item {
     background: var(--background-secondary-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    flex-wrap: wrap;
-     width: calc ((100%-72px)/4);
+    flex-basis: calc((100% - 72px) / 4);
+    min-width: 250px;
 }
 
 .team-subtitle {
@@ -335,13 +349,14 @@ margin-bottom: 72px;
 
 
 .footer {
-    height: 310px;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 310px;
+    /* width: 1440px; */
+    /* margin-left: auto;
+    margin-right: auto; */
     background-color: var(--background-color);
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 100px 0;
 }
 
 
@@ -370,6 +385,7 @@ margin-bottom: 72px;
 .projects-list {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 }
 
 .projects-item {
@@ -385,6 +401,7 @@ margin-bottom: 72px;
 .projects-btn {
     color: var(--background-button-color);
     background-color: var(--secondary-button-color);
+    border: none;
 }
 
 .projects-list .projects-btn:hover,
@@ -397,28 +414,24 @@ margin-bottom: 72px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
     row-gap: 48px;
     column-gap: 24px;
+    margin-bottom: 120px;
 }
 
 .portfolio-item {
-    width: calc ((100%-48px))/3;
-     background: var(--background-secondary-color);
-    width: 360px;
-    height: 420px;
+    background: var(--background-secondary-color);
+    flex-basis: calc((100% - 48px) / 3);
     border: 1px solid #E7E9FC;
 }
   
 .porfolio-subtitle {
     color: var(--accent-color);
-    margin-top: 32px;
-    margin-left: 16px;
+   
 }
 
 .portfolio-description {
  color: var(--description-color);
  margin-top: 8px;
- margin-bottom: 32px;
- margin-left: 16px; 
+
 }
